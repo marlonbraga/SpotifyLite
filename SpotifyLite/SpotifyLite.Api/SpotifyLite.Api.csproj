@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SpofityLite.Application\SpofityLite.Application.csproj" />
+    <ProjectReference Include="..\SpofityLite.Application\SpotifyLite.Application.csproj" />
     <ProjectReference Include="..\SpotifyLite.Repository\SpotifyLite.Repository.csproj" />
   </ItemGroup>
 

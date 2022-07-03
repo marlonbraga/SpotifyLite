@@ -1,11 +1,7 @@
 ﻿using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using SpofityLite.Application.Album.Service;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using SpofityLite.Application.Usuario.Service;
 
 namespace SpofityLite.Application
 {
@@ -19,6 +15,7 @@ namespace SpofityLite.Application
 
             services.AddScoped<IBandaService, BandaService>();
             services.AddScoped<IAlbumService, AlbumService>();
+            services.AddScoped<IUsuarioService, UsuarioService>();
 
             return services;
         }

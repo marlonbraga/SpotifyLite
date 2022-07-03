@@ -11,9 +11,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotifyLite.Repository", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotifyLite.Api", "SpotifyLite.Api\SpotifyLite.Api.csproj", "{D65E6985-A681-47AF-815F-8E2CE83D6E17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpofityLite.Application", "SpofityLite.Application\SpofityLite.Application.csproj", "{1DAEAF09-543F-4E36-A6C5-C9FDFF6E29E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotifyLite.Application", "SpofityLite.Application\SpotifyLite.Application.csproj", "{1DAEAF09-543F-4E36-A6C5-C9FDFF6E29E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotifyLite.Test", "SpotifyLite.Test\SpotifyLite.Test.csproj", "{5D75A493-39DD-4B4B-A613-133C05951A83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotifyLite.Test", "SpotifyLite.Test\SpotifyLite.Test.csproj", "{5D75A493-39DD-4B4B-A613-133C05951A83}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "external_docs", "external_docs", "{CF48E6DE-A389-4E8C-9851-B3BC1A385F0D}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
