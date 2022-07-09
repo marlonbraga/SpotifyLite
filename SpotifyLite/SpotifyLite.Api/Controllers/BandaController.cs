@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using SpofityLite.Application.Album.Dto;
-using SpofityLite.Application.Album.Service;
+using SpofityLite.Application.Album.Handler.Command;
+using SpofityLite.Application.Album.Handler.Query;
+using SpofityLite.Application.Banda.Handler.Command;
 
 namespace SpotifyLite.Api.Controllers
 {
@@ -9,17 +11,26 @@ namespace SpotifyLite.Api.Controllers
     [ApiController]
     public class BandaController : ControllerBase
     {
-        private readonly IBandaService bandaService;
+        private readonly IMediator mediator;
 
-        public BandaController(IBandaService bandaService)
+        public BandaController(IMediator mediator)
         {
-            this.bandaService = bandaService;
+            this.mediator = mediator;
         }
 
         [HttpGet]
         public async Task<IActionResult> ObterTodos()
         {
-            return Ok(await this.bandaService.ObterTodos());
+            var result = await this.mediator.Send(new GetAllBandaQuery());
+            return Ok(result);
+        }
+
+        [Route("{id?}")]
+        [HttpGet]
+        public async Task<IActionResult> Get(Guid id)
+        {
+            var result = await this.mediator.Send(new GetBandaQuery(id));
+            return Ok(result);
         }
 
         [HttpPost]
@@ -28,9 +39,33 @@ namespace SpotifyLite.Api.Controllers
             if (ModelState.IsValid == false)
                 return BadRequest(ModelState);
 
-            var result = await this.bandaService.Criar(dto);
+            var result = await this.mediator.Send(new CreateBandaCommand(dto));
 
             return Created($"/{result.Id}", result);
+        }
+
+        [Route("{id?}")]
+        [HttpPut]
+        public async Task<IActionResult> Editar(Guid id, BandaInputDto dto)
+        {
+            if (ModelState.IsValid == false)
+                return BadRequest(ModelState);
+
+            var result = await this.mediator.Send(new EditBandaCommand(id, dto));
+
+            return Ok(result);
+        }
+
+        [Route("{id?}")]
+        [HttpDelete]
+        public async Task<IActionResult> Deletar(Guid id)
+        {
+            if (ModelState.IsValid == false)
+                return BadRequest(ModelState);
+
+            await this.mediator.Send(new DeleteBandaCommand(id));
+
+            return NoContent();
         }
     }
 }

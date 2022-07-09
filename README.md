@@ -12,12 +12,12 @@ Projeto de Persistência e MVC da pós graduação Infnet
 
 ### Banda
 - [X] Criar Banda 
-- [ ] Editar Banda
+- [X] Editar Banda
 - [ ] Remover Música da Banda
 - [ ] Adicionar Música da Banda
 - [ ] Trocar posição de Música na Banda
-- [ ] Deletar Banda 
-- [ ] Obter Banda 
+- [X] Deletar Banda 
+- [X] Obter Banda 
 - [X] Obter todas as Bandas
 
 ### Música
