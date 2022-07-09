@@ -8,11 +8,11 @@ namespace SpotifyLite.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BandaController : ControllerBase
+    public class MusicaController : ControllerBase
     {
         private readonly IMediator mediator;
 
-        public BandaController(IMediator mediator)
+        public MusicaController(IMediator mediator)
         {
             this.mediator = mediator;
         }
@@ -20,7 +20,7 @@ namespace SpotifyLite.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> ObterTodos()
         {
-            var result = await this.mediator.Send(new GetAllBandaQuery());
+            var result = await this.mediator.Send(new GetAllMusicaQuery());
             return Ok(result);
         }
 
@@ -28,29 +28,29 @@ namespace SpotifyLite.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> Get(Guid id)
         {
-            var result = await this.mediator.Send(new GetBandaQuery(id));
+            var result = await this.mediator.Send(new GetMusicaQuery(id));
             return Ok(result);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Criar(BandaInputDto dto)
+        public async Task<IActionResult> Criar(MusicaInputDto dto)
         {
             if (ModelState.IsValid == false)
                 return BadRequest(ModelState);
 
-            var result = await this.mediator.Send(new CreateBandaCommand(dto));
+            var result = await this.mediator.Send(new CreateMusicaCommand(dto));
 
-            return Created($"/{result.Banda.Id}", result);
+            return Created($"/{result.Musica.Id}", result);
         }
 
         [Route("{id?}")]
         [HttpPut]
-        public async Task<IActionResult> Editar(Guid id, BandaInputDto dto)
+        public async Task<IActionResult> Editar(Guid id, MusicaInputDto dto)
         {
             if (ModelState.IsValid == false)
                 return BadRequest(ModelState);
 
-            var result = await this.mediator.Send(new EditBandaCommand(id, dto));
+            var result = await this.mediator.Send(new EditMusicaCommand(id, dto));
 
             return Ok(result);
         }
@@ -62,7 +62,7 @@ namespace SpotifyLite.Api.Controllers
             if (ModelState.IsValid == false)
                 return BadRequest(ModelState);
 
-            await this.mediator.Send(new DeleteBandaCommand(id));
+            await this.mediator.Send(new DeleteMusicaCommand(id));
 
             return NoContent();
         }

@@ -21,11 +21,11 @@ Projeto de Persistência e MVC da pós graduação Infnet
 - [X] Obter todas as Bandas
 
 ### Música
-- [ ] Criar Música 
-- [ ] Editar Música
-- [ ] Deletar Música 
-- [ ] Obter Música 
-- [ ] Obter todas as Músicas
+- [X] Criar Música 
+- [X] Editar Música
+- [X] Deletar Música 
+- [X] Obter Música 
+- [X] Obter todas as Músicas
 
 ### Album
 - [X] Criar Album 
