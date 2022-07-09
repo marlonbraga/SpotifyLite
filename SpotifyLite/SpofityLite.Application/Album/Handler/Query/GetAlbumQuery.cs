@@ -1,25 +1,25 @@
 ﻿using MediatR;
 using SpofityLite.Application.Album.Dto;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SpofityLite.Application.Album.Handler.Query
 {
-    public class GetAllAlbumQuery : IRequest<GetAllAlbumQueryResponse>
+    public class GetAlbumQuery : IRequest<GetAlbumQueryResponse>
     {
+        public Guid IdAlbum { get; set; }
 
+        public GetAlbumQuery(Guid idAlbum)
+        {
+            IdAlbum = idAlbum;
+        }
     }
 
-    public class GetAllAlbumQueryResponse 
+    public class GetAlbumQueryResponse
     {
-        public IList<AlbumOutputDto> Albums { get; set; }
+        public AlbumOutputDto Album { get; set; }
 
-        public GetAllAlbumQueryResponse(IList<AlbumOutputDto> albums)
+        public GetAlbumQueryResponse(AlbumOutputDto album)
         {
-            Albums = albums;
+            Album = album;
         }
     }
 }

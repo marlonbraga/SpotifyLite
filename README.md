@@ -29,12 +29,12 @@ Projeto de Persistência e MVC da pós graduação Infnet
 
 ### Album
 - [X] Criar Album 
-- [ ] Editar Album
+- [X] Editar Album
 - [ ] Remover Música de Album
 - [ ] Adicionar Música a Album
 - [ ] Trocar posição de Música na Album
-- [ ] Deletar Album 
-- [ ] Obter Album 
+- [X] Deletar Album 
+- [X] Obter Album 
 - [X] Obter todas as Albums
 
 ### Playlist

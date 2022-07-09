@@ -1,10 +1,5 @@
 ﻿using MediatR;
 using SpofityLite.Application.Album.Dto;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SpofityLite.Application.Album.Handler.Command
 {
@@ -12,11 +7,9 @@ namespace SpofityLite.Application.Album.Handler.Command
     {
         public AlbumInputDto Album { get; set; }
 
-        public Guid IdBanda { get; set; }
-
         public CreateAlbumCommand(AlbumInputDto album)
         {
-            Album = album;
+            this.Album = album;
         }
     }
 
