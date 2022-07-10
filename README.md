@@ -50,19 +50,19 @@ Projeto de Persistência e MVC da pós graduação Infnet
 
 ## Testes Unitários
 
-- [ ] <a definir>
-- [ ] <a definir>
-- [ ] <a definir>
-- [ ] <a definir>
-- [ ] <a definir>
-- [ ] <a definir>
-- [ ] <a definir>
-- [ ] <a definir>
+- [X] Deve Criar Banda com Sucesso
+- [X] Deve Obter Banda com Sucesso
+- [X] Deve Criar Album com Sucesso
+- [X] Deve Obter Album com Sucesso
+- [X] Deve Criar Música com Sucesso
+- [X] Deve Obter Música com Sucesso
+- [X] Deve Criar Usuário com Sucesso
+- [X] Deve Obter Usuário com Sucesso
 
 ## Lazyload
-- [ ] <a definir>
+- [X] <a definir>
 
 ## CQRS
-- [ ] <a definir>
+- [X] <a definir>
 
 
