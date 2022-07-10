@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SpotifyLite.Domain.Album.Factory
+﻿namespace SpotifyLite.Domain.Album.Factory
 {
     public static class AlbumFactory
     {
@@ -22,7 +16,7 @@ namespace SpotifyLite.Domain.Album.Factory
         public static Album Create(string nome, IEnumerable<Musica> musicas)
         {
             if (!musicas.Any())
-               throw new ArgumentNullException("Para criar um album, o album deve ter no minimo uma musica");
+                throw new ArgumentNullException("Para criar um album, o album deve ter no minimo uma musica");
 
             return new Album()
             {

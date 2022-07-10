@@ -3,7 +3,7 @@ using SpofityLite.Application.Usuario.Dto;
 
 namespace SpotifyLite.Application.Usuario.Handler.Query
 {
-    public class GetUsuarioQuery : IRequest<GetAllUsuarioQueryResponse>
+    public class GetUsuarioQuery : IRequest<GetUsuarioQueryResponse>
     {
         public Guid IdUsuario { get; set; }
 

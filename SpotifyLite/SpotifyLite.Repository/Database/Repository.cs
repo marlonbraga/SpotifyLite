@@ -2,17 +2,12 @@
 using Microsoft.EntityFrameworkCore.Storage;
 using SpotifyLite.CrossCutting.Repository;
 using SpotifyLite.Repository.Context;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SpotifyLite.Repository.Database
 {
-    public class Repository<T> : IRepository<T> where T: class
+    public class Repository<T> : IRepository<T> where T : class
     {
         protected DbSet<T> Query { get; set; }
         protected DbContext Context { get; set; }
@@ -50,7 +45,7 @@ namespace SpotifyLite.Repository.Database
         {
             return await this.Query
                              .FirstOrDefaultAsync(expression);
-                 
+
         }
 
         public async Task<T> Get(object id)

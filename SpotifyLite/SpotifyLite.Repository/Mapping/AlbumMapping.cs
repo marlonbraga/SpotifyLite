@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SpotifyLite.Domain.Album;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SpotifyLite.Repository.Mapping
 {
@@ -20,7 +15,7 @@ namespace SpotifyLite.Repository.Mapping
             builder.Property(x => x.Backdrop);
             builder.Property(x => x.DataLancamento).IsRequired();
 
-            builder.HasMany(x => x.Musicas).WithOne().OnDelete(DeleteBehavior.Cascade); 
+            builder.HasMany(x => x.Musicas).WithOne().OnDelete(DeleteBehavior.Cascade);
 
         }
     }

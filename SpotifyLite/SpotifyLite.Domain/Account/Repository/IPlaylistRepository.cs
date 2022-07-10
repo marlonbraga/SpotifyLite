@@ -2,7 +2,8 @@
 
 namespace SpotifyLite.Domain.Account.Repository
 {
-    public interface IUsuarioRepository : IRepository<Usuario>
+    public interface IPlaylistRepository : IRepository<Playlist>
     {
+
     }
 }

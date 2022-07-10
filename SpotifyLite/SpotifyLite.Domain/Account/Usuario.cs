@@ -3,11 +3,6 @@ using SpotifyLite.CrossCutting.Entity;
 using SpotifyLite.CrossCutting.Utils;
 using SpotifyLite.Domain.Account.Rules;
 using SpotifyLite.Domain.Account.ValueObject;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SpotifyLite.Domain.Account
 {

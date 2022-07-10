@@ -18,7 +18,7 @@ namespace SpotifyLite.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> ObterTodos([FromQuery(Name = "page")] string page="1")
+        public async Task<IActionResult> ObterTodos([FromQuery(Name = "page")] string page = "1")
         {
             var result = await this.mediator.Send(new GetAllUsuarioQuery());
             return Ok(result);

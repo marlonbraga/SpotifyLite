@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using SpofityLite.Application.Usuario.Dto;
 
 namespace SpotifyLite.Application.Usuario.Handler.Command
 {

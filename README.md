@@ -3,12 +3,12 @@ Projeto de Persistência e MVC da pós graduação Infnet
 
 ## Casos de Uso
 
-### Usuario
-- [X] Criar Usuario 
-- [X] Editar Usuario
-- [X] Deletar Usuario 
-- [X] Obter Usuario 
-- [X] Obter todas as Usuarios
+### Usuário
+- [X] Criar Usuário 
+- [X] Editar Usuário
+- [X] Deletar Usuário 
+- [X] Obter Usuário 
+- [X] Obter todas as Usuários
 
 ### Banda
 - [X] Criar Banda 
@@ -39,12 +39,12 @@ Projeto de Persistência e MVC da pós graduação Infnet
 
 ### Playlist
 - [X] Criar Playlist 
-- [ ] Editar Playlist
-- [ ] Remover Musica da Playlist
-- [ ] Adicionar Musica da Playlist
-- [ ] Trocar posição de Musica na Playlist
-- [ ] Deletar Playlist 
-- [ ] Obter Playlist 
+- [X] Editar Playlist
+- [ ] Remover Música da Playlist
+- [ ] Adicionar Música da Playlist
+- [ ] Trocar posição de Música na Playlist
+- [X] Deletar Playlist 
+- [X] Obter Playlist 
 - [X] Obter todas as Playlists
 
 

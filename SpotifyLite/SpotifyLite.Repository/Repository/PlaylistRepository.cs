@@ -5,9 +5,9 @@ using SpotifyLite.Repository.Database;
 
 namespace SpotifyLite.Repository.Repository
 {
-    public class UsuarioRepository : Repository<Usuario>, IUsuarioRepository
+    public class PlaylistRepository : Repository<Playlist>, IPlaylistRepository
     {
-        public UsuarioRepository(SpotifyContext context) : base(context)
+        public PlaylistRepository(SpotifyContext context) : base(context)
         {
         }
     }
