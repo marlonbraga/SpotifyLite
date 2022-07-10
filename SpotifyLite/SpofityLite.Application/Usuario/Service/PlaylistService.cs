@@ -1,10 +1,11 @@
 ﻿using AutoMapper;
 using SpofityLite.Application.Usuario.Dto;
+using SpofityLite.Application.Usuario.Service;
 using SpotifyLite.Domain.Account.Repository;
 
 namespace SpofityLite.Application.Album.Service
 {
-    public class PlaylistService
+    public class PlaylistService : IPlaylistService
     {
         private readonly IPlaylistRepository PlaylistRepository;
         private readonly IMapper mapper;
