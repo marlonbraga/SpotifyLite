@@ -22,6 +22,7 @@ namespace SpotifyLite.Repository
             services.AddScoped<IAlbumRepository, AlbumRepository>();
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
             services.AddScoped<IPlaylistRepository, PlaylistRepository>();
+            services.AddScoped<IMusicaRepository, MusicaRepository>();
 
             return services;
         }
