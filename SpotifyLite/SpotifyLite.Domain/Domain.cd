@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="SpotifyLite.Domain.Account.Playlist">
+    <Position X="5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Account\Playlist.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Musicas" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpotifyLite.Domain.Account.Usuario">
+    <Position X="8.75" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAACCAAAAAAAAAAAAAAAAAAAACAAAAgAEAAAA=</HashCode>
+      <FileName>Account\Usuario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Password" />
+      <Property Name="Email" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Playlists" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SpotifyLite.Domain.Account.Rules.EmailValidator">
+    <Position X="12.25" Y="7.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Account\Rules\EmailValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpotifyLite.Domain.Account.Rules.PasswordValidator">
+    <Position X="15.25" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Account\Rules\PasswordValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpotifyLite.Domain.Account.Rules.UsuarioValidator">
+    <Position X="18" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Account\Rules\UsuarioValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpotifyLite.Domain.Account.ValueObject.Email">
+    <Position X="7.5" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Account\ValueObject\Email.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpotifyLite.Domain.Account.ValueObject.Password">
+    <Position X="10" Y="7.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Account\ValueObject\Password.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpotifyLite.Domain.Album.Album">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAACAAAAAAAAAAAAAAAIAAEAAAA=</HashCode>
+      <FileName>Album\Album.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Musicas" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SpotifyLite.Domain.Album.Banda">
+    <Position X="2.75" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAABgAAAABAAAAAAAAAAAAAAAAAACAAAAASAEAAAA=</HashCode>
+      <FileName>Album\Banda.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Albums" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SpotifyLite.Domain.Album.Musica">
+    <Position X="0.5" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Album\Musica.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Duracao" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpotifyLite.Domain.Album.Factory.AlbumFactory">
+    <Position X="10" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Album\Factory\AlbumFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpotifyLite.Domain.Album.ValueObject.Duracao">
+    <Position X="0.5" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEQAAAAAAEAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Album\ValueObject\Duracao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpotifyLite.CrossCutting.Entity.Entity&lt;T&gt;">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="FluentValidation.AbstractValidator&lt;T&gt;">
+    <Position X="13.5" Y="1.5" Width="5.75" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="SpotifyLite.Domain.Account.Repository.IPlaylistRepository" Collapsed="true">
+    <Position X="5.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Account\Repository\IPlaylistRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpotifyLite.Domain.Account.Repository.IUsuarioRepository" Collapsed="true">
+    <Position X="3.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Account\Repository\IUsuarioRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpotifyLite.Domain.Album.Repository.IAlbumRepository">
+    <Position X="0.5" Y="8.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Album\Repository\IAlbumRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpotifyLite.Domain.Album.Repository.IBandaRepository" Collapsed="true">
+    <Position X="3.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Album\Repository\IBandaRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SpotifyLite.Domain.Album.Repository.IMusicaRepository" Collapsed="true">
+    <Position X="5.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Album\Repository\IMusicaRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="System.Collections.Generic.IList&lt;T&gt;">
+    <Position X="5" Y="5.25" Width="3" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
