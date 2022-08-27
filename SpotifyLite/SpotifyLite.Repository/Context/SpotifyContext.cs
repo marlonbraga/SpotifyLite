@@ -4,7 +4,6 @@ namespace SpotifyLite.Repository.Context
 {
     public class SpotifyContext : DbContext
     {
-
         public SpotifyContext(DbContextOptions<SpotifyContext> options) : base(options)
         {
 
