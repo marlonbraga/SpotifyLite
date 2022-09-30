@@ -1,38 +1,50 @@
 # SpotifyLite
-Projeto de Persistência e MVC da pós graduação Infnet
+Projeto de PersistÃªncia e MVC da pÃ³s graduaÃ§Ã£o Infnet
+
+## Diagrama de Classes
+
+### Diagramas em PDF
+[Visualizar PDF](./SpotifyLite/marlon-braga_persistencia-mvc.pdf)
+
+### Domain
+![Domain](./SpotifyLite/Domain.png)
+### Application
+![Application](./SpotifyLite/Application.png)
+### Repository
+![Repository](./SpotifyLite/Repository.png)
 
 ## Casos de Uso
 
-### Usuário
-- [X] Criar Usuário 
-- [X] Editar Usuário
-- [X] Deletar Usuário 
-- [X] Obter Usuário 
-- [X] Obter todas as Usuários
+### UsuÃ¡rio
+- [X] Criar UsuÃ¡rio 
+- [X] Editar UsuÃ¡rio
+- [X] Deletar UsuÃ¡rio 
+- [X] Obter UsuÃ¡rio 
+- [X] Obter todas as UsuÃ¡rios
 
 ### Banda
 - [X] Criar Banda 
 - [X] Editar Banda
-- [ ] Remover Música da Banda
-- [ ] Adicionar Música da Banda
-- [ ] Trocar posição de Música na Banda
+- [ ] Remover MÃºsica da Banda
+- [ ] Adicionar MÃºsica da Banda
+- [ ] Trocar posiÃ§Ã£o de MÃºsica na Banda
 - [X] Deletar Banda 
 - [X] Obter Banda 
 - [X] Obter todas as Bandas
 
-### Música
-- [X] Criar Música 
-- [X] Editar Música
-- [X] Deletar Música 
-- [X] Obter Música 
-- [X] Obter todas as Músicas
+### MÃºsica
+- [X] Criar MÃºsica 
+- [X] Editar MÃºsica
+- [X] Deletar MÃºsica 
+- [X] Obter MÃºsica 
+- [X] Obter todas as MÃºsicas
 
 ### Album
 - [X] Criar Album 
 - [X] Editar Album
-- [ ] Remover Música de Album
-- [ ] Adicionar Música a Album
-- [ ] Trocar posição de Música na Album
+- [ ] Remover MÃºsica de Album
+- [ ] Adicionar MÃºsica a Album
+- [ ] Trocar posiÃ§Ã£o de MÃºsica na Album
 - [X] Deletar Album 
 - [X] Obter Album 
 - [X] Obter todas as Albums
@@ -40,24 +52,24 @@ Projeto de Persistência e MVC da pós graduação Infnet
 ### Playlist
 - [X] Criar Playlist 
 - [X] Editar Playlist
-- [ ] Remover Música da Playlist
-- [ ] Adicionar Música da Playlist
-- [ ] Trocar posição de Música na Playlist
+- [ ] Remover MÃºsica da Playlist
+- [ ] Adicionar MÃºsica da Playlist
+- [ ] Trocar posiÃ§Ã£o de MÃºsica na Playlist
 - [X] Deletar Playlist 
 - [X] Obter Playlist 
 - [X] Obter todas as Playlists
 
 
-## Testes Unitários
+## Testes UnitÃ¡rios
 
 - [X] Deve Criar Banda com Sucesso
 - [X] Deve Obter Banda com Sucesso
 - [X] Deve Criar Album com Sucesso
 - [X] Deve Obter Album com Sucesso
-- [X] Deve Criar Música com Sucesso
-- [X] Deve Obter Música com Sucesso
-- [X] Deve Criar Usuário com Sucesso
-- [X] Deve Obter Usuário com Sucesso
+- [X] Deve Criar MÃºsica com Sucesso
+- [X] Deve Obter MÃºsica com Sucesso
+- [X] Deve Criar UsuÃ¡rio com Sucesso
+- [X] Deve Obter UsuÃ¡rio com Sucesso
 
 ## Lazyload
 - [X] <a definir>
