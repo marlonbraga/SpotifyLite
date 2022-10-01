@@ -4,6 +4,7 @@ using SpotifyLite.Domain.Account.Repository;
 using SpotifyLite.Domain.Album.Repository;
 using SpotifyLite.Repository.Context;
 using SpotifyLite.Repository.Database;
+using SpotifyLite.Repository.Infraestructure;
 using SpotifyLite.Repository.Repository;
 
 namespace SpotifyLite.Repository
@@ -23,6 +24,7 @@ namespace SpotifyLite.Repository
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
             services.AddScoped<IPlaylistRepository, PlaylistRepository>();
             services.AddScoped<IMusicaRepository, MusicaRepository>();
+            services.AddScoped<AzureBlobStorage>();
 
             return services;
         }
